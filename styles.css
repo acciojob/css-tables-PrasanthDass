@@ -1,1 +1,36 @@
 /*  your css code here. If applicable */
+.styled-table {
+    border-collapse: separate; /* Required to allow border-radius on cells */
+    border-spacing: 10px; /* Adds space between cells, mimicking the image */
+    width: 50%; /* Adjust as needed */
+    margin: 20px auto; /* Center the table */
+    font-family: Arial, sans-serif;
+}
+
+/* 1. Styling for all table data and header cells (td and th) */
+.styled-table th,
+.styled-table td {
+    border: 1px solid #ccc; /* Border requirement */
+    border-radius: 5px; /* Border-radius requirement */
+    padding: 0.5rem; /* Padding requirement */
+    text-align: left;
+}
+
+/* Specific styling for the table headers */
+.styled-table th {
+    font-weight: bold;
+    background-color: #ffffff; /* Explicit background for headers */
+    color: #333;
+}
+
+/* 2. Styling for alternating row backgrounds */
+
+/* Even rows (2nd, 4th, etc., which are the default background: #ffffff) */
+.styled-table tr:nth-child(even) {
+    background-color: #ffffff; /* Explicitly set even rows to white */
+}
+
+/* Odd rows (1st, 3rd, 5th, etc.) */
+.styled-table tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Set odd rows to light gray */
+}
